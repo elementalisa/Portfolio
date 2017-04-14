@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.karec.portfolio.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="155dp"
+            android:layout_height="104dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/imageButton"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:text="abcza@hotmail"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@+id/imageButton"
+            android:layout_toRightOf="@+id/imageButton"
+            android:layout_weight="1"
+            android:text="Dikaev Denis"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCompetences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Competences"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonExperiences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experiences"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonFormations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formations"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>
