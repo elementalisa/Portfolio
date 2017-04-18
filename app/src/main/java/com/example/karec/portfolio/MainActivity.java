@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if(keyCode== KeyEvent.KEYCODE_BACK){
-            setContentView(R.layout.activity_main);
+            if (keyCode == KeyEvent.KEYCODE_BACK) {
+                setContentView(R.layout.activity_main);
+                recreate();
         }
         return super.onKeyDown(keyCode, event);
     }

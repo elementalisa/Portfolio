@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/MenuPresentationColor"
+    android:backgroundTint="?android:attr/textColorHint"
     android:orientation="vertical"
-    tools:context="com.example.karec.portfolio.MainActivity"
-    android:weightSum="1">
+    android:weightSum="1"
+    tools:background="@color/colorPrimaryDark"
+    tools:context="com.example.karec.portfolio.MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
@@ -16,24 +20,26 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="202dp">
+        android:layout_height="202dp"
+        android:background="@color/BackgroundColor">
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="155dp"
             android:layout_height="104dp"
-            app:srcCompat="@mipmap/ic_launcher"
-            android:layout_below="@+id/linearLayout"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            app:srcCompat="@mipmap/ic_launcher" />
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_toRightOf="@+id/imageButton"
-            android:id="@+id/linearLayout">
+            android:orientation="horizontal">
 
         </LinearLayout>
 
@@ -47,6 +53,7 @@
             android:layout_marginTop="14dp"
             android:layout_weight="1"
             android:text="abcza@hotmail"
+            android:textColor="@color/TextColor"
             android:textSize="18sp" />
 
         <TextView
@@ -61,6 +68,7 @@
             android:layout_toRightOf="@+id/imageButton"
             android:layout_weight="1"
             android:text="Dikaev Denis"
+            android:textColor="@color/TextColor"
             android:textSize="18sp" />
 
     </RelativeLayout>
@@ -68,29 +76,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_toEndOf="@+id/linearLayout3"
+        android:layout_toRightOf="@+id/linearLayout3"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/buttonCompetences"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/ButtonColor"
             android:text="Competences"
-            android:layout_weight="1"/>
+            android:textColor="@color/TextColor" />
 
         <Button
             android:id="@+id/buttonExperiences"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/ButtonPrimaryDark"
             android:text="Experiences"
-            android:layout_weight="1"/>
+            android:textColor="@color/TextColor" />
 
         <Button
             android:id="@+id/buttonFormations"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
             android:text="Formations"
-            android:layout_weight="1"/>
+            android:textColor="@color/TextColor" />
     </LinearLayout>
 
 
-</LinearLayout>
+</RelativeLayout>
